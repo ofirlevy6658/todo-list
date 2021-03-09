@@ -59,10 +59,10 @@ function addTask(name, discrp) {
 	taskList.addItem(task);
 	const showTaskDiv = document.querySelector(".task-list");
 	const index = taskList.taskArr.length - 1;
-	const taskStr = `<div data-id="${taskList.taskArr[index].id}">
+	const taskStr = `<div class="task" data-id="${taskList.taskArr[index].id}">
                     <h3>${taskList.taskArr[index].name}</h3>
-                    <p>${taskList.taskArr[index].description} <input type="checkbox" class="check-box" data-id="${taskList.taskArr[index].id}" ></p>
-                    <button class="del-btn">Delete</button>
+                    <p>${taskList.taskArr[index].description} <input type="checkbox" class="check-box btn" data-id="${taskList.taskArr[index].id}" ></p>
+                    <button class="del-btn btn">Delete</button>
                     </div>`;
 	const taskEl = document.createElement("div");
 	taskEl.innerHTML = taskStr;
