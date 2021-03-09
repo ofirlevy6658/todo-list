@@ -1,0 +1,9 @@
+.hide {
+	visibility: hidden;
+}
+.new-task {
+	margin-top: 50px;
+}
+.del-btn {
+	display: block;
+}
